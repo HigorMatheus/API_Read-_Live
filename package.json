@@ -1,0 +1,31 @@
+{
+  "name": "api_read_live",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/server "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HigorMatheus/API_Read_Live.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HigorMatheus/API_Read_Live/issues"
+  },
+  "homepage": "https://github.com/HigorMatheus/API_Read_Live#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "knex": "^0.21.1",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
