@@ -9,7 +9,6 @@ exports.up = function(knex) {
       table.string('sexo').notNullable();
       table.string('id_turma').notNullable();
       table.string('pontuacao').notNullable();
-      table.string('id_user').notNullable();
     });
   };
   

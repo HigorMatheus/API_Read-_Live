@@ -10,7 +10,12 @@ const UserController = {
     // visualizar todos os usuarios 
     async index (req,res){
  
-        connection.select( 'id','name','email').table('users').then((results)=>{
+        connection.select(
+          'email',
+          'senha',
+          'token',
+          'papel',
+        ).table('users').then((results)=>{
           return res.json(results)
         })
 
@@ -19,9 +24,12 @@ const UserController = {
     // criando um usuario 
     async create( req,res){
     //   console.log(req.body)
-      name= req.body.name;
-      email= req.body.email;
-      senha = req.body.senha;
+      const{
+        email,
+        senha,
+        token,
+        papel,
+      } = req.body
 
       bcrypt.genSalt(10, ( erro, salt)=>{
           bcrypt.hash(senha,salt, async (erro,hash)=>{
@@ -30,9 +38,10 @@ const UserController = {
               res.redirect("/")
             }
              await connection.table('users').insert( {
-              name,
               email,
-              senha: hash,
+              senha:hash,
+              token,
+              papel,
             } );
             return res.json( req.body);
           });
@@ -41,13 +50,19 @@ const UserController = {
 
     // alterando um usuario
     async update(req,res){
-      const{  name, email, senha } = req.body;
+      const{
+        email,
+        senha,
+        token,
+        papel,
+      } = req.body;
       const{id} = req.params
 
       await connection('users').update({
-        name,
         email,
         senha,
+        token,
+        papel,
       }).where({id})
       return res.json(res.body)
     },

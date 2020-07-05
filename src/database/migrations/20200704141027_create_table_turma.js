@@ -6,6 +6,7 @@ exports.up = function(knex) {
       table.increments('id').primary();
       table.string('id_escola').notNullable();
       table.string('name').notNullable();
+      table.string('nivel').notNullable();
       table.string('serie').notNullable();
     });
   };

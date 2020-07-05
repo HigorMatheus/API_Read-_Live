@@ -8,7 +8,6 @@ exports.up = function(knex) {
       table.string('name').notNullable();
       table.string('sexo').notNullable();
       table.string('materia').notNullable();
-      table.integer('user_id').notNullable();
     });
   };
   

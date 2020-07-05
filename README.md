@@ -10,6 +10,10 @@ npm install
 ```bash
 npx knex migrate:latest
 ```
+## prencher o banco de dados 
+```bash
+npx knex seed:run
+```
 
 ### inicie o funcionamento da API
 ```bash
