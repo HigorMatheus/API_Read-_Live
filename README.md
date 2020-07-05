@@ -1,5 +1,4 @@
 ## API_Read-_Live
-# Arvore App (arvore)
 
 api iniciada no megahack 3.0
 
@@ -7,7 +6,7 @@ api iniciada no megahack 3.0
 ```bash
 npm install
 ```
-## para o funcionamento e necessario o  banco de dados para crialo rode o comando 
+## inicie o banco de dados 
 ```bash
 npx knex migrate:latest
 ```
