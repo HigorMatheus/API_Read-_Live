@@ -19,5 +19,5 @@ npm rum dev
 
 
 ### Repositorio font end
-See [Repositorio funt end](https://github.com/Goncalves-Rafael/megahack3_grupo13_front).
+See [Repositorio front end](https://github.com/Goncalves-Rafael/megahack3_grupo13_front).
 
