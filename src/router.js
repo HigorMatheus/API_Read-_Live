@@ -17,6 +17,7 @@ const ProfTurmaController = require('./controllers/ProfTurmaConttoler')
 const routes = express.Router();
 
 // routes usuario
+routes.post('/auth',UserController.auth)
 routes.post('/user' , UserController.create);
 routes.get('/user' , UserController.index);
 routes.put('/user/:id' , UserController.update);
