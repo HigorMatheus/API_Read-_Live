@@ -7,12 +7,12 @@ api iniciada no megahack 3.0
 ```bash
 npm install
 ```
-## rode as migraçoes para criar o arquivo do banco de dados 
+## para o funcionamento e necessario o  banco de dados para crialo rode o comando 
 ```bash
 npx knex migrate:latest
 ```
 
-### inicie o funsionamento da API
+### inicie o funcionamento da API
 ```bash
 npm rum dev
 ```
